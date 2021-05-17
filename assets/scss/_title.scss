@@ -1,0 +1,151 @@
+.title {
+  display: flex;
+  flex-wrap: wrap;
+  color: $p-color;
+  text-transform: capitalize;
+  .name {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    padding: 70px 60px;
+
+    h2 {
+      margin-bottom: 15px;
+    }
+  }
+
+  .one {
+    background-color: #79bfd7;
+    width: 40%;
+    height: 300px;
+
+    &:hover {
+      background-color: #8e8b92;
+      transition: 1s;
+      cursor: pointer;
+    }
+  }
+  .two {
+    background-color: #847cb9;
+    width: 60%;
+    height: 300px;
+    &:hover {
+      background-color: #494f77;
+      transition: 1s;
+      cursor: pointer;
+    }
+  }
+  .three {
+    background-color: #d9877f;
+    width: 65%;
+    height: 300px;
+    &:hover {
+      background-color: #9e7f87;
+      transition: 1s;
+      cursor: pointer;
+    }
+  }
+  .four {
+    background-color: #c2a48d;
+    width: 35%;
+    height: 300px;
+    &:hover {
+      background-color: #857e87;
+      transition: 1s;
+      cursor: pointer;
+    }
+  }
+  .five {
+    background-color: #829ad1;
+    width: 35%;
+    height: 300px;
+    &:hover {
+      background-color: #857e87;
+      transition: 1s;
+      cursor: pointer;
+    }
+  }
+  .six {
+    background-color: #7cb099;
+    width: 65%;
+    height: 300px;
+    &:hover {
+      background-color: #494f77;
+      transition: 1s;
+      cursor: pointer;
+    }
+  }
+}
+.about {
+  background-color: #2a2f4a;
+  width: 100%;
+
+  .Massalibero {
+    padding: 70px 50px;
+    color: $p-color;
+    p {
+      line-height: 1.9;
+      color: #ddd;
+      margin: 40px 0;
+    }
+    .arrow {
+      margin-top: 50px;
+      text-transform: uppercase;
+      border: 1px solid #fff;
+      letter-spacing: 1px;
+      text-align: center;
+      height: 40px;
+      padding: 10px 24px;
+      cursor: pointer;
+
+      &:hover {
+        color: #74bad3;
+        border: 1px solid #74bad3;
+        transition: 1s;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 865px) {
+  .title {
+    .one,
+    .two,
+    .three,
+    .four,
+    .five,
+    .six {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .title {
+    display: block;
+    .name {
+      padding: 70px 30px;
+    }
+
+    .one,
+    .two,
+    .three,
+    .four,
+    .five,
+    .six {
+      width: 100%;
+    }
+    h2,
+    p {
+      padding: 0 20px;
+    }
+  }
+
+  .Massalibero {
+    p {
+      font-size: 14px;
+      width: 100%;
+    }
+  }
+}
